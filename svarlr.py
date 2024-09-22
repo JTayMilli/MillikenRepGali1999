@@ -61,7 +61,7 @@ def varlr(series, p=1):
     # long-run restriction here is theta(1) is lower triangular matrix
     theta1 = np.linalg.cholesky(lvar.conj().transpose())
     B = np.dot(np.linalg.inv(Phi1), theta1)
-    
+    print(theta1)
     return b, Sig, B
 
 
